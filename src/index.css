@@ -1,0 +1,132 @@
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 40 30% 97%;
+    --foreground: 220 25% 16%;
+
+    --card: 40 25% 95%;
+    --card-foreground: 220 25% 16%;
+
+    --popover: 40 30% 97%;
+    --popover-foreground: 220 25% 16%;
+
+    --primary: 220 35% 22%;
+    --primary-foreground: 40 30% 97%;
+
+    --secondary: 35 30% 90%;
+    --secondary-foreground: 220 25% 16%;
+
+    --muted: 35 20% 92%;
+    --muted-foreground: 220 10% 46%;
+
+    --accent: 32 60% 52%;
+    --accent-foreground: 40 30% 97%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 35 20% 88%;
+    --input: 35 20% 88%;
+    --ring: 32 60% 52%;
+
+    --radius: 0.75rem;
+
+    --warm-gold: 38 70% 55%;
+    --warm-cream: 40 40% 94%;
+    --deep-navy: 220 35% 18%;
+    --soft-brown: 25 20% 40%;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: 'Noto Serif KR', serif;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+  font-size: 17px;
+}
+
+/* Hero overlay gradient */
+.hero-overlay {
+  background: linear-gradient(
+    to bottom,
+    hsla(220, 25%, 8%, 0.5) 0%,
+    hsla(220, 25%, 8%, 0.68) 40%,
+    hsla(220, 25%, 8%, 0.82) 100%
+  );
+}
+
+/* Warm section gradient */
+.warm-gradient {
+  background: linear-gradient(
+    135deg,
+    hsl(var(--warm-cream)) 0%,
+    hsl(var(--background)) 100%
+  );
+}
+
+/* Fade-in animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.animate-delay-100 { animation-delay: 0.1s; }
+.animate-delay-200 { animation-delay: 0.2s; }
+.animate-delay-300 { animation-delay: 0.3s; }
+.animate-delay-400 { animation-delay: 0.4s; }
+
+/* Floating animation for hero tags */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-6px); }
+}
+
+.animate-float:nth-child(1) { animation: float 3.2s ease-in-out infinite; }
+.animate-float:nth-child(2) { animation: float 3.8s ease-in-out infinite 0.4s; }
+.animate-float:nth-child(3) { animation: float 3.5s ease-in-out infinite 0.8s; }
+.animate-float:nth-child(4) { animation: float 4.0s ease-in-out infinite 0.2s; }
