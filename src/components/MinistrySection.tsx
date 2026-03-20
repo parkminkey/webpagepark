@@ -62,7 +62,7 @@ const ministriesFirst: Ministry[] = [
     title: "글로벌SQ연구소 인천가석센터 (센터장)",
     description:
       "\"나는 왜 이렇게 힘들까\", \"내가 잘 하고 있는 걸까\" — 이런 질문 앞에 선 사람들을 만납니다. SQ(Spiritual Quotient) 전문 상담과 정밀 검사를 통해 스스로의 가치를 발견하고, 흔들리지 않는 삶의 중심을 찾아가도록 함께합니다.",
-    link: { label: "네이버 블로그 바로가기", url: "https://blog.naver.com/sqlifedesign", iconType: 'naver' },
+    link: { label: "SQ인천가석센터 바로가기", url: "https://sq-life-designer.vercel.app/", iconType: 'naver' },
   },
   {
     icon: GraduationCap,
