@@ -29,7 +29,7 @@ const AboutSection = () => {
             골목에서 시작된 이야기
           </h2>
           <div className="max-w-xl mx-auto space-y-3 text-foreground/70">
-            <p className="font-sans text-base md:text-xl text-left md:text-center leading-relaxed break-keep">골목 안에 사는 아이들을 이름으로 부릅니다.</p>
+            <p className="font-sans text-base md:text-xl text-left md:text-center leading-relaxed break-keep">골목 안에 사는 아이들의 이름을 부릅니다.</p>
             <p className="font-sans text-base md:text-xl text-left md:text-center leading-relaxed break-keep">낯선 캠퍼스를 걷는 청년들의 이야기를 듣습니다.</p>
             <p className="font-sans text-base md:text-xl text-left md:text-center leading-relaxed break-keep">삶의 무게에 지친 사람 곁에 앉아, 함께 답을 찾습니다.</p>
             <p className="font-sans text-base md:text-xl text-left md:text-center leading-relaxed break-keep">길을 잃었다고 느끼는 사람에게는 상담사로 함께합니다.</p>
